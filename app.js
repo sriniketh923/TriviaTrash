@@ -65,8 +65,8 @@ app.post('/inbound', (req, res) => {
         newMessage.torf7 = 'f';
         newMessage.save(() => {
           client.messages.create({
-            to: '+17164803657',
-            from: '+17162721487',
+            to: '',
+            from: '',
             body: 'What is your name?'
           }).then(message => console.log(message.sid)).done();
           res.end();
@@ -79,8 +79,8 @@ app.post('/inbound', (req, res) => {
             b = 'B) ' + question[0].options[1];
             c = 'C) ' + question[0].options[2];
             client.messages.create({
-              to: '+17164803657',
-              from: '+17162721487',
+              to: '',
+              from: '',
               body: q + '\n' + a + '\n' + b + '\n' + c
             }).then(message => console.log(question.sid)).done();
             console.log('ERROR q and o: ' + error);
@@ -100,8 +100,8 @@ app.post('/inbound', (req, res) => {
               b = 'B) ' + question[1].options[1];
               c = 'C) ' + question[1].options[2];
               client.messages.create({
-                to: '+17164803657',
-                from: '+17162721487',
+                to: '',
+                from: '',
                 body: 'Right Answer!!' + '\n' + '\n' + q + '\n' + a + '\n' + b + '\n' + c
               }).then(message => console.log(question.sid)).done();
             } else {
@@ -110,8 +110,8 @@ app.post('/inbound', (req, res) => {
               b = 'B) ' + question[1].options[1];
               c = 'C) ' + question[1].options[2];
               client.messages.create({
-                to: '+17164803657',
-                from: '+17162721487',
+                to: '',
+                from: '',
                 body: 'Sorry, you are wrong!' + '\n' + '\n' + q + '\n' + a + '\n' + b + '\n' + c
               }).then(message => console.log(question.sid)).done();
             }
@@ -130,8 +130,8 @@ app.post('/inbound', (req, res) => {
               b = 'B) ' + question[2].options[1];
               c = 'C) ' + question[2].options[2];
               client.messages.create({
-                to: '+17164803657',
-                from: '+17162721487',
+                to: '',
+                from: '',
                 body: 'Right Answer!!' + '\n' + '\n' + q + '\n' + a + '\n' + b + '\n' + c
               }).then(message => console.log(question.sid)).done();
             } else {
@@ -140,8 +140,8 @@ app.post('/inbound', (req, res) => {
               b = 'B) ' + question[2].options[1];
               c = 'C) ' + question[2].options[2];
               client.messages.create({
-                to: '+17164803657',
-                from: '+17162721487',
+                to: '',
+                from: '',
                 body: 'Sorry, you are wrong!' + '\n' + '\n' + q + '\n' + a + '\n' + b + '\n' + c
               }).then(message => console.log(question.sid)).done();
             }
@@ -161,8 +161,8 @@ app.post('/inbound', (req, res) => {
             b = 'B) ' + question[3].options[1];
             c = 'C) ' + question[3].options[2];
             client.messages.create({
-              to: '+17164803657',
-              from: '+17162721487',
+              to: '',
+              from: '',
               body: 'Right Answer!!' + '\n' + '\n' + q + '\n' + a + '\n' + b + '\n' + c
             }).then(message => console.log(question.sid)).done();
           } else {
@@ -171,8 +171,8 @@ app.post('/inbound', (req, res) => {
             b = 'B) ' + question[3].options[1];
             c = 'C) ' + question[3].options[2];
             client.messages.create({
-              to: '+17164803657',
-              from: '+17162721487',
+              to: '',
+              from: '',
               body: 'Sorry, you are wrong!' + '\n' + '\n' + q + '\n' + a + '\n' + b + '\n' + c
             }).then(message => console.log(question.sid)).done();
           }
@@ -193,8 +193,8 @@ app.post('/inbound', (req, res) => {
             b = 'B) ' + question[4].options[1];
             c = 'C) ' + question[4].options[2];
             client.messages.create({
-              to: '+17164803657',
-              from: '+17162721487',
+              to: '',
+              from: '',
               body: 'Right Answer!!' + '\n' + '\n' + q + '\n' + a + '\n' + b + '\n' + c
             }).then(message => console.log(question.sid)).done();
           } else {
@@ -203,8 +203,8 @@ app.post('/inbound', (req, res) => {
             b = 'B) ' + question[4].options[1];
             c = 'C) ' + question[4].options[2];
             client.messages.create({
-              to: '+17164803657',
-              from: '+17162721487',
+              to: '',
+              from: '',
               body: 'Sorry, you are wrong!' + '\n' + '\n' + q + '\n' + a + '\n' + b + '\n' + c
             }).then(message => console.log(question.sid)).done();
           }
@@ -225,8 +225,8 @@ app.post('/inbound', (req, res) => {
             b = 'B) ' + question[5].options[1];
             c = 'C) ' + question[5].options[2];
             client.messages.create({
-              to: '+17164803657',
-              from: '+17162721487',
+              to: '',
+              from: '',
               body: 'Right Answer!!' + '\n' + '\n' + q + '\n' + a + '\n' + b + '\n' + c
             }).then(message => console.log(question.sid)).done();
           } else {
@@ -235,8 +235,8 @@ app.post('/inbound', (req, res) => {
             b = 'B) ' + question[5].options[1];
             c = 'C) ' + question[5].options[2];
             client.messages.create({
-              to: '+17164803657',
-              from: '+17162721487',
+              to: '',
+              from: '',
               body: 'Sorry, you are wrong!' + '\n' + '\n' + q + '\n' + a + '\n' + b + '\n' + c
             }).then(message => console.log(question.sid)).done();
           }
@@ -257,8 +257,8 @@ app.post('/inbound', (req, res) => {
             b = 'B) ' + question[6].options[1];
             c = 'C) ' + question[6].options[2];
             client.messages.create({
-              to: '+17164803657',
-              from: '+17162721487',
+              to: '',
+              from: '',
               body: 'Right Answer!!' + '\n' + '\n' + q + '\n' + a + '\n' + b + '\n' + c
             }).then(message => console.log(question.sid)).done();
           } else {
@@ -267,8 +267,8 @@ app.post('/inbound', (req, res) => {
             b = 'B) ' + question[6].options[1];
             c = 'C) ' + question[6].options[2];
             client.messages.create({
-              to: '+17164803657',
-              from: '+17162721487',
+              to: '',
+              from: '',
               body: 'Sorry, you are wrong!' + '\n' + '\n' + q + '\n' + a + '\n' + b + '\n' + c
             }).then(message => console.log(question.sid)).done();
           }
@@ -284,14 +284,14 @@ app.post('/inbound', (req, res) => {
           })
           console.log('Score: ' + message[0].score);
           client.messages.create({
-            to: '+17164803657',
-            from: '+17162721487',
+            to: '',
+            from: '',
             body: 'Right Answer!!' + '\n' + '\n' + "Total Score: " + message[0].score
           }).then(message => console.log(question.sid)).done();
         } else {
           client.messages.create({
-            to: '+17164803657',
-            from: '+17162721487',
+            to: '',
+            from: '',
             body: 'Sorry, you are wrong!' + '\n' + '\n' + "Total Score: " + message[0].score
           }).then(message => console.log(question.sid)).done();
         }
@@ -299,8 +299,8 @@ app.post('/inbound', (req, res) => {
       })
     } else {
       client.messages.create({
-        to: '+17164803657',
-        from: '+17162721487',
+        to: '',
+        from: '',
         body: 'Text \'Play\' to play'
     })
   }
